@@ -39,20 +39,20 @@ OUTPUT operand from the operand stack
 ```
 SUB push (data)
   IF stack is full THEN give an error
-  ELSE increment top pointer AND insert data at top pointer AND increment size
+  ELSE increment top pointer AND insert data at top pointer
   ENDIF
 ENDSUB
 SUB pop ()
   IF stack is empty THEN give an error
-  ELSE store data at top pointer AND decrement top pointer AND return stored data AND decrement size
+  ELSE store data at top pointer AND decrement top pointer AND return stored data
 ENDSUB
 SUB isFull()
-  IF size = maxSize THEN RETURN true
+  IF top pointer + 1 = max size THEN RETURN true
   ELSE RETURN false
   ENDIF
 ENDSUB
 SUB isEmpty()
-  IF size = 0 THEN RETURN true
+  IF top pointer = -1 THEN RETURN true
   ELSE RETURN false
   ENDIF
 ENDSUB
