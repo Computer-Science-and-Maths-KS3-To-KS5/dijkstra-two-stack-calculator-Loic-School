@@ -23,14 +23,15 @@ During the processing of the expression, I will need to store operands and opera
 ```
 OUTPUT heading sentence
 INPUT expression from user
-WHILE there are still characters to process
+FOR each character in the expression
   IF current character is
     '(' OR ' ' THEN ignore
     operand THEN push onto operand stack
     operator THEN push onto operator stack
     ')' THEN carry out an operation AND push the result onto the operand stack
+  ELSE OUTPUT error message
   ENDIF
-ENDWHILE
+ENDFOR
 OUTPUT operand from the operand stack
 ```
 
@@ -44,7 +45,7 @@ SUB push (data)
 ENDSUB
 SUB pop ()
   IF stack is empty THEN give an error
-  ELSE store data at top pointer AND decrement top pointer AND return stored data
+  ELSE decrement top pointer AND return data at top pointer + 1
 ENDSUB
 SUB isFull()
   IF top pointer + 1 = max size THEN RETURN true
@@ -66,12 +67,22 @@ I will use a command line interface (CLI) for simplicity because the scope of th
 
 ### CLI Design
 
+## Valid Input
+
 ```
 Welcome to the Dijkstra Calculator
 
 Enter an expression --> [user input]
 
 The expression evaluates to [computer output]
-OR
+```
+
+## Invalid Input
+
+```
+Welcome to the Dijkstra Calculator
+
+Enter an expression --> [user input]
+
 The expression you have entered is invalid
 ```
