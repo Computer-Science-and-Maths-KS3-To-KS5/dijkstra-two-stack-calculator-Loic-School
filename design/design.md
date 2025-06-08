@@ -65,9 +65,7 @@ ENDSUB
 
 I will use a command line interface (CLI) for simplicity because the scope of this project is limited to the functionality of the calculator rather than the aesthetics of the interface. By choosing a CLI, no functionality is lost, so a graphical user interface (GUI) could be implemented on top of my project without many reworks to the main algorithm.
 
-### CLI Design
-
-## Valid Input
+### Valid Input Example
 
 ```
 Welcome to the Dijkstra Calculator
@@ -77,7 +75,7 @@ Enter an expression --> [user input]
 The expression evaluates to [computer output]
 ```
 
-## Invalid Input
+### Invalid Input Example
 
 ```
 Welcome to the Dijkstra Calculator
