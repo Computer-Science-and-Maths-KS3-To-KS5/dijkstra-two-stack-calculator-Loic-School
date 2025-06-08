@@ -14,8 +14,8 @@
 
 ### Valid Input Example, Test #5
 
-![Screenshot of the command line after Test #5 is complete](../screenshots/valid-input-example.png)
+![Screenshot of the command line after Test #5 is complete](../screenshots/valid-input-example.PNG)
 
 ### Invalid Input Example, Test #3
 
-![Screenshot of the command line after Test #3 is complete](../screenshots/invalid-input-example.png)
+![Screenshot of the command line after Test #3 is complete](../screenshots/invalid-input-example.PNG)
